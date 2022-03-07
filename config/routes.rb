@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # Authentication
   devise_scope :user do
     get "/login" => "devise/sessions#new", as: :login
-    get "/logout" => "sessions#destroy", :as => :logout
+    get "/logout" => "devise/sessions#destroy", :as => :logout
     get "/signup" => "registrations#new", :as => :signup
     scope "my" do
       get "profile", to: "registrations#edit"
