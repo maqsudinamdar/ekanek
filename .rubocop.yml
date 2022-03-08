@@ -123,7 +123,7 @@ Style/MethodDefParentheses:
   Enabled: true
 
 Style/FrozenStringLiteralComment:
-  Enabled: true
+  Enabled: false
   EnforcedStyle: always
   Exclude:
     - 'actionview/test/**/*.builder'
@@ -156,7 +156,7 @@ Layout/SpaceInsideParens:
 
 # Check quotes usage according to lint rule below.
 Style/StringLiterals:
-  Enabled: true
+  Enabled: false
   EnforcedStyle: double_quotes
 
 # Detect hard tabs, no hard tabs.
