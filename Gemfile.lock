@@ -77,8 +77,8 @@ GEM
       execjs (~> 2)
     bcrypt (3.1.16)
     bindex (0.8.1)
-    bootsnap (1.9.4)
-      msgpack (~> 1.0)
+    bootsnap (1.11.1)
+      msgpack (~> 1.2)
     bootstrap (4.4.1)
       autoprefixer-rails (>= 9.1.0)
       popper_js (>= 1.14.3, < 2)
@@ -119,6 +119,7 @@ GEM
       railties (>= 5.0.0)
     faker (2.19.0)
       i18n (>= 1.6, < 2)
+    ffi (1.15.5)
     ffi (1.15.5-x64-mingw32)
     font-awesome-sass (5.15.1)
       sassc (>= 1.11)
@@ -166,14 +167,17 @@ GEM
     minitest (5.15.0)
     momentjs-rails (2.29.1.1)
       railties (>= 3.1)
-    msgpack (1.4.2)
+    msgpack (1.4.5)
     nio4r (2.5.8)
     nokogiri (1.13.0-x64-mingw32)
+      racc (~> 1.4)
+    nokogiri (1.13.0-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     parallel (1.21.0)
     parser (3.1.0.0)
       ast (~> 2.4.1)
+    pg (1.2.3)
     pg (1.2.3-x64-mingw32)
     popper_js (1.16.0)
     public_suffix (4.0.6)
@@ -248,6 +252,8 @@ GEM
     rubyzip (2.3.2)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     sassc (2.4.0-x64-mingw32)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
@@ -318,6 +324,7 @@ GEM
 
 PLATFORMS
   x64-mingw32
+  x86_64-linux
 
 DEPENDENCIES
   administrate
