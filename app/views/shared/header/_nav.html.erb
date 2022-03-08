@@ -29,10 +29,8 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="<%=new_contact_path %>">
-            <i class="fas fa-comments"></i>
-            <span class="nav-link-inner--text d-lg-none">Contact</span>
-          </a>
+        <li class="nav-item">
+          <%= link_to "Posts", posts_path, class:"nav-link" %>
         </li>
         <%=render "shared/header/signed_in_nav" %>
       </ul>
