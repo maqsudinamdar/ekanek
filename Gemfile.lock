@@ -119,6 +119,7 @@ GEM
       railties (>= 5.0.0)
     faker (2.19.0)
       i18n (>= 1.6, < 2)
+    ffi (1.15.5)
     ffi (1.15.5-x64-mingw32)
     font-awesome-sass (5.15.1)
       sassc (>= 1.11)
@@ -150,7 +151,7 @@ GEM
       activerecord
       kaminari-core (= 1.2.2)
     kaminari-core (1.2.2)
-    listen (3.6.0)
+    listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.13.0)
@@ -170,10 +171,13 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.0-x64-mingw32)
       racc (~> 1.4)
+    nokogiri (1.13.0-x86_64-linux)
+      racc (~> 1.4)
     orm_adapter (0.5.0)
     parallel (1.21.0)
     parser (3.1.0.0)
       ast (~> 2.4.1)
+    pg (1.2.3)
     pg (1.2.3-x64-mingw32)
     popper_js (1.16.0)
     public_suffix (4.0.6)
@@ -213,7 +217,7 @@ GEM
       thor (~> 1.0)
     rainbow (3.1.1)
     rake (13.0.6)
-    rb-fsevent (0.11.0)
+    rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     redis (4.5.1)
@@ -248,6 +252,8 @@ GEM
     rubyzip (2.3.2)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     sassc (2.4.0-x64-mingw32)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
@@ -318,6 +324,7 @@ GEM
 
 PLATFORMS
   x64-mingw32
+  x86_64-linux
 
 DEPENDENCIES
   administrate
@@ -335,7 +342,7 @@ DEPENDENCIES
   jbuilder (~> 2.10)
   jquery-growl-rails
   jquery-rails
-  listen (>= 3.0.5, < 3.7)
+  listen (>= 3.0.5, < 3.8)
   pg (>= 0.18, < 2.0)
   puma (< 6)
   rails (~> 6.0)
